@@ -16,6 +16,5 @@ function usersDataDisplay(data) {
 		li.innerText = `name : ${user.name}  email : ${user.email}  Id : ${user.id} addres : ${user.address.city}`; 
 		li.classList.add('list-class');
 		userUl.appendChild(li); 
-		console.log(user.name);
 	}
 }
