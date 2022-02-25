@@ -12,14 +12,32 @@
 <body>
 	<h1>Learn API </h1>
 	<section>
-		<!-- class = 'btn' -->
+		<h2 class="text-success">Please Serch Your Favarite Foods </h2>
 		<div class="input-group mb-3">
-			<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-			<button class="btn btn-outline-secondary" type="button" id="button-addon2">search</button>
+			<input id="meal-field" type="text" class="form-control" placeholder="Please search your Favarite foods" aria-label="Recipient's username" aria-describedby="button-addon2">
+			<button class="btn btn-outline-secondary" type="button" id="meal-btn">search</button>
 		  </div>
+	</section>
+	<!-- meals section or card section by bootstrap  -->
+	<section id="meals-container">
+		<!-- grid cards  -->
+		<div class="row row-cols-1 row-cols-md-3 g-4" id="meals-container">
+			<!-- start single card -->
+			<div class="col">
+			  <div class="card">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> 
+				</div>
+			  </div>
+			</div>
+			<!-- end single card -->
+		  </div>
+		<!-- grid cards end  -->
 	</section>
 	<!-- bootstrap js  -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script src="api.js"></script>
+	<script src="meal.js"></script>
 </body>
 </html>
