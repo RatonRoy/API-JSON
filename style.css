@@ -1,0 +1,22 @@
+h1{
+	background-color: white;
+	color: #1E3A8A;
+	text-align: center;
+	letter-spacing: 0.2rem;
+}
+.btn{
+	padding: 0.8rem 1rem;
+	border: 2px solid white;
+	color: red;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	border-radius: 0.5rem; 
+	cursor: pointer;
+	background-color: wheat; 
+	display: inline-block;
+	margin-left: 1rem;
+}
+section{
+	width: 50vw;
+	margin: 0 auto;
+}
