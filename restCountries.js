@@ -26,5 +26,22 @@ const displayRestCountries = (countries) => {
 	});
 }
 const restCountriesByName = (name) => {
-	console.log(name)
+	const url = `https://restcountries.com/v3.1/name/${name}`
+	fetch(url)
+		.then(res => res.json())
+		.then(data => displayCountryDetails(data[0]))
+}
+const displayCountryDetails = (countrie) => {
+	console.log(countrie);
+	const countrieDetails = document.getElementById('countrie-details');
+	countrieDetails.innerHTML = `
+	<h2>Name Of The Countrie: ${countrie.name.common} </h2>
+	<div class = "dynamic-section">
+	<h3>Population : ${countrie.population} </h3>
+	<img src="${countrie.flags.png}" alt="" srcset="">
+	</div> 
+	`
+	/* console.log(countrie.flags.png);
+	console.log(countrie.population);
+	console.log(countrie.name.official); */
 }

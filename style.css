@@ -20,6 +20,10 @@ section{
 	width: 80vw;
 	margin: 0 auto;
 }
+.dynamic-section{
+	width: 30vw;
+	margin: 0 auto;
+}
 .country-container{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
