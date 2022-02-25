@@ -11,6 +11,7 @@ document.getElementById('meal-btn').addEventListener('click', function () {
 const mealsDisplay = (name) => {
 	const meals = name.meals;
 	const mealsContainer = document.getElementById('meals-container');
+	mealsContainer.textContent = '';
 	for (const meal of meals) {
 		// console.log(meal.idMeal);
 		const div = document.createElement('div');
@@ -36,6 +37,7 @@ const mealDetilesId = meal => {
 const displayId = idItem => {
 	console.log(idItem);
 	const cardContainer = document.getElementById('card-container');
+	cardContainer.textContent = '';
 	cardContainer.innerHTML = `
 			<div class="card">
 				<img src="${idItem.strMealThumb}" class="card-img-top" alt="...">
